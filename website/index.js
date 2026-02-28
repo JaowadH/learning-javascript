@@ -1,33 +1,17 @@
-// arithmetic operators = operands (values, variables, etc.)
-//                                         operators (+ - * /)
-//                                         ex. 11 = x + 5;
-//                                       ex. 11 = x + 5;
+// How to accept user input
 
-let students = 30;
+// 1. EASY WAY = window prompt
+// 2. PROFESSIONAL WAY = HTML textbox
 
-//students = students + 1;
-//students = students - 1;
-//students = students * 2;
-//students = students / 2;
-//students = students ** 2;
-//let extraStudents = students % 3;
+// ------------------------ EASY WAY ------------------------
+// let username = window.prompt("What's your username?");
 
-console.log(students);
+// console.log(username);
 
-//students += 1;
-//students -= 1;
-//students *= 2;
-//students /= 2;
-//students **= 2;
-//students %= 2;
+// -------------------- PROFESSIONAL WAY --------------------
+let username;
 
-//students++;
-//students--;
-
-/*
-    operator precedence
-    1. parenthesis ()
-    2. exponents
-    3. multiplication & division & modulo
-    4. addition & subtraction
-*/
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Hello ${username}`
+}
