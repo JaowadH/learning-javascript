@@ -1,10 +1,18 @@
-//console.log(`Hello`);
-//console.log(`I like pizza`);
+// variable = A container that stores a value.
+//                   Behaves as if it were the value it contains.
 
-//window.alert(`This is an alart`);
-//window.alert(`I like Pizza`);
+//1. declaration let x;
+//2. assignment x=100;
 
-document.getElementById("myH1").textContent = `Hello`;
-document.getElementById("myP").textContent = `I like pizza`;
+//let age = 25;
+//let price = 10.99;
+//let gpa = 2.1;
 
-// This is a comment
+let firstName = "Jaowad";
+let favouriteFood = "Pizza";
+let email = "jaowad@gmail.com"
+
+console.log(typeof firstName);
+console.log(`Your name is ${firstName}`);
+console.log(`You like ${favouriteFood}`);
+console.log(`Your email is ${email}`);
